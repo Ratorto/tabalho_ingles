@@ -1,0 +1,96 @@
+body {
+    font-family: Arial, sans-serif;
+    background: #eef6f9;
+    margin: 0;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h1 {
+    color: #222;
+}
+
+form {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    max-width: 400px;
+    width: 100%;
+}
+
+.numbers {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-bottom: 20px;
+}
+
+.numbers label {
+    background: #ddd;
+    border-radius: 4px;
+    padding: 6px 10px;
+    cursor: pointer;
+    user-select: none;
+}
+
+input[type="radio"] {
+    display: none;
+}
+
+input[type="radio"]:checked+label {
+    background: #3498db;
+    color: rgb(48, 48, 48);
+    font-weight: bold;
+}
+
+.animal-name {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 15px;
+    min-height: 40px;
+    text-align: center;
+    color: #333;
+}
+
+.options {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.options label {
+    background: #eee;
+    border-radius: 6px;
+    padding: 10px;
+    cursor: pointer;
+    user-select: none;
+    border: 2px solid transparent;
+    transition: border-color 0.3s;
+}
+
+.options input[type="radio"]:checked+label {
+    border-color: #27ae60;
+    background: #d4f5d4;
+}
+
+.instructions {
+    margin-bottom: 15px;
+    color: #555;
+    font-style: italic;
+    text-align: center;
+}
+
+button
+{
+    display: block;           
+    margin: 20px auto;         
+    text-align: center;
+    width: 250px;
+    height: 60px;
+    border: groove;
+    border-radius: 10px;
+
+}
